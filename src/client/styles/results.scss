@@ -1,0 +1,108 @@
+@import 'base.scss';
+
+h1 {
+    font-size: 32px;
+    font-weight: 700;
+    color: $bright;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    border-bottom: 2px solid $dark;
+    padding-bottom: 4px;
+    margin-bottom: 20px;
+}
+
+.results-box {
+    padding: 20px;
+    border-radius: 6px;
+    background: white;
+    color: $dark;
+    font-size: 24px;
+    line-height: 1.2;   
+}
+
+h2 {
+    color: $dark;
+    font-size: 20px;
+    color:$highlight;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.analysis {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.subjectivity {
+    background: $dark;
+    flex-grow: 1;
+    margin-top: 0;
+    display: flex;
+    align-items: center;
+    p { 
+        margin: auto;
+        color: $full-bright;
+        strong {
+            padding: 4px 10px;
+            font-weight: 700;
+            color: $deep-dark;
+            background: $highlight;
+            border-radius: 4px;
+        }
+    }
+}
+
+.polarity {
+    flex-grow: 1;
+    h2 {
+        text-align: center;
+    }
+    .bar {
+        margin: auto;
+        border: 2px solid $deep-dark;
+        border-radius: 4px;
+        width: 300px;
+        display: flex;
+        overflow: hidden;
+    }
+}
+
+.step {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    height: 8px;
+    width: 60px;
+    padding: 0 10px;
+    border-right: 1px solid $neutral;
+    background: $bright;
+    &:last-child {
+        border-right: none;
+    }
+}
+
+.active {
+    background: $highlight;
+}
+
+.polarity .label {
+    margin: auto;
+    width: 300px;
+    padding: 0 4px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+}
+
+@media (max-width: 480px) {
+    main {
+        padding: 10px;
+    }
+
+    section {
+        padding: 20px;
+    }
+
+}

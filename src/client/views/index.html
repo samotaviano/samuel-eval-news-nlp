@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Evaluate News with Natural Language Processing</title>
+    </head>
+
+    <body>
+
+        <header>
+            <div class="wrap">
+                <div class="site-logo">
+                </div>
+                <div class="nav">
+                    navigation
+                </div>
+            </div>
+        </header>
+
+        <main>
+            <section>
+                <form class="" onsubmit="return Client.handleSubmit(event)">
+                    <input id="name" type="text" name="input" value="" placeholder="Enter a valid url like http://">
+                    <!-- <input id="name" type="text" name="input" value="" onblur="Client.onBlur()" placeholder="Name"> -->
+                    <input type="submit" name="" value="submit" onclick="return Client.handleSubmit(event)" onsubmit="return handleSubmit(event)">
+                </form>
+            </section>
+
+            <!-- <section>
+                <h1>RESULTS</h1>
+                <div class="results-box text-snippet">
+                    <h2>Here is a small text snippet</h2>   
+                    <p>O objetivo central da reforma é simplificar tributos federais, estaduais e municipais.</p>  
+                </div>
+                <div class="analysis">
+                    <div class="results-box polarity">
+                        <h2>Polarity</h2>   
+                        <div class="bar">
+                            <div class="step"></div>
+                            <div class="step"></div>
+                            <div class="step"></div>
+                            <div class="step active"></div>
+                            <div class="step"></div>
+                        </div>
+                        <div class="label">
+                            <p>NEGATIVE</p>
+                            <p>NEUTRAL</p>
+                            <p>POSITIVE</p>
+                        </div>
+                    </div>
+                    <div class="results-box subjectivity">
+                        <p>The text is <strong>OBJECTIVE</strong></p>  
+                    </div>
+                </div>
+            </section> -->
+        </main>
+
+        <footer>
+            <p>This is a web tool that allows users to run Natural Language Processing (NLP) on articles or blogs found on other websites.</p>
+        </footer>
+    <script>
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load', () => {
+                navigator.serviceWorker.register('/service-worker.js')
+            });
+        }
+    </script>
+    </body>
+</html>

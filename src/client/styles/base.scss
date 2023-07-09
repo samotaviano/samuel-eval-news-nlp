@@ -1,0 +1,37 @@
+// Colors
+$deep-dark: #1c314b;
+$dark: #4b5592;
+$normal:#5C80BC; 
+$neutral: #c8c8cb;
+$bright: #dee4ed;
+$full-bright: #eff0f6;
+$highlight: #FFB62E;
+$error-dark: #931414;
+$error: #eb3c3c;
+$error-light: #fbe2e2;
+
+// Type
+@import url('https://fonts.googleapis.com/css2?family=Agdasima:wght@400;700&display=swap');
+$font: 'Agdasima', sans-serif;
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    font-family: $font;
+    background: $full-bright;
+}
+
+main {
+    padding: 0 20px;
+    flex: 2;
+}
+
+section {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 40px;
+    border: 1px solid $dark;
+    border-radius: 12px;
+    background: $normal;
+}

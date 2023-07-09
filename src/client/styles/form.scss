@@ -1,0 +1,40 @@
+@import 'base.scss';
+
+input {
+    padding: 10px;
+    width: 100%;
+    line-height: 16px;
+    margin: 10px 0;
+    font-family: $font;
+    border: 1px solid $dark;
+    border-radius: 4px;
+}
+
+#name {
+    font-size: 20px;
+    color: $normal;
+}
+
+input[type=submit] {
+    background: $bright;
+    color: $normal;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 20px;
+}
+
+input[type=submit]:hover {
+    background: $highlight;
+    border: 1px solid $bright;
+    color: white;
+    border: 1px solid $deep-dark;
+    cursor: pointer;
+}
+
+.error {
+    padding: 10px;
+    background: $error-light;
+    color: $error;
+    border: 1px solid $error-dark;
+    border-radius: 4px;
+}

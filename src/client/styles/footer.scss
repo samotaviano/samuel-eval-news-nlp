@@ -1,0 +1,11 @@
+@import 'base.scss';
+
+footer {
+    padding: 40px;
+    background: $deep-dark;
+    border-top: 2px solid $normal;
+    p {
+        text-align: center;
+        color: $normal;
+    }
+}
